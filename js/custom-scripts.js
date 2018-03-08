@@ -41,7 +41,7 @@
     /* MAP HEIGHT                                             */
     /**********************************************************/
     var contactUsBody = function(){
-        var mapHeight = $('.contact-us-body').height();
+        var mapHeight = $('.our-featured-speaker-body').height();
         $(".map").css('min-height', mapHeight);
     }
 
@@ -57,7 +57,7 @@
 
 
     /*********************************************************/
-    /*   SCEDULE SECTION MOBILE VIEW                         */             
+    /*   SCEDULE SECTION MOBILE VIEW                         */
     /*********************************************************/
     var btnSceduleCss = function(){
         if($(document).width() <= 991){
@@ -84,7 +84,7 @@
 
 
 
-    
+
     $(window).resize(function(){
 
         /*********************************************************/
@@ -104,10 +104,10 @@
         /* COLLAPSE LEFT HEIGHT                                  */
         /*********************************************************/
         collapseLeft();
-        
+
 
         /*********************************************************/
-        /*   SCEDULE SECTION MOBILE VIEW                         */             
+        /*   SCEDULE SECTION MOBILE VIEW                         */
         /*********************************************************/
         btnSceduleCss();
     });
@@ -122,7 +122,8 @@
         /**********************************************************/
         /*   ...  */
         /**********************************************************/
-        var top = Math.max($(window).height() / 2 - $("#header-body")[0].offsetHeight / 2, 0);
+        // var top = Math.max($(window).height() / 2 - $("#header-body")[0].offsetHeight / 2, 0);
+        var top = 0;
         $("#header-body").css('padding-top', top + "px").css('padding-bottom', (top - $('#header-navbar ').height()) + "px");
         $("#header-body").css('position', 'relative');
 
@@ -130,7 +131,7 @@
 
         /**********************************************************/
         /* CAROUSEL SLIDER                                        */
-        /**********************************************************/ 
+        /**********************************************************/
         var owl = $("#slider");
 
         /* TESTIMONIAL SYNC WITH CLIENTS */
@@ -149,7 +150,7 @@
 
 
         /*********************************************************/
-        /*   SCEDULE SECTION MOBILE VIEW                         */             
+        /*   SCEDULE SECTION MOBILE VIEW                         */
         /*********************************************************/
         btnSceduleCss();
 
@@ -165,7 +166,7 @@
         $('.nav li').click(function(){
             var text = $(this).find('.nav-header').text();
             $(this).closest('.dropdown').find('.label').html(text + '<span class="glyphicon glyphicon-menu-down float-right" aria-hidden="true"></span>');
-        
+
             if($(document).width() <= 991){
                 $($(this).closest('.dropdown').find('.nav-cus')).slideToggle('show');
             }
@@ -227,7 +228,7 @@
         /* PARALLAX                                               */
         /**********************************************************/
         $(window).stellar({
-            horizontalScrolling: false 
+            horizontalScrolling: false
         });
 
 
@@ -252,9 +253,9 @@
 
         /***********************************************************/
         /* COUNT DOWN                                              */
-        /***********************************************************/       
+        /***********************************************************/
         $('.count_down').countdown({
-            end_time: "2016/05/21 14:27:28 +0600",
+            end_time: "2018/04/06 18:00:00 -0800",
             wrapper: function(unit){
                 var wrpr = $('<div></div>').
                     addClass(unit.toLowerCase()+'_wrapper').
@@ -308,7 +309,7 @@
         });
 
 
-     
+
     });
 
 
@@ -316,8 +317,8 @@
     /*   GOOGLE MAP                                           */
     /**********************************************************/
     function init_map() {
-        var myLocation = new google.maps.LatLng(24.892467,91.87048);
-            
+        var myLocation = new google.maps.LatLng(37.767111,-122.419524);
+
             var draggableValue;
             if($(document).width() <= 768){
                 draggableValue = false;   /*This option is used for disabling drag.*/
@@ -335,26 +336,25 @@
             scaleControl: false,   /*This option is used for disable zoom by scale.*/
             scrollwheel: false,   /*This option is used for disable zoom on mouse.*/
             navigationControl: true,   /**/
-            
-            // How you would like to style the map. 
+
+            // How you would like to style the map.
            // This is where you would paste any style found on Snazzy Maps.
            styles: [{"stylers": [{"saturation": -100}]}],
 
             streetViewControl: true   /**/
-          
+
         };
 
         var marker = new google.maps.Marker({
             position: myLocation,
             title:"Peggy Guggenheim Collection"});
-          
+
         var map = new google.maps.Map(document.getElementById("map"),
             mapOptions);
 
-        marker.setMap(map); 
+        marker.setMap(map);
     }
     google.maps.event.addDomListener(window, 'load', init_map);
 
 
 });
-
