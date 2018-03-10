@@ -7,13 +7,15 @@
     /*********************************************************/
     /* FULLSCREEN HOME SECTION                               */
     /*********************************************************/
+
+
+
     var fullscreen_home = function(){
         if(matchMedia( "(min-width: 768px) and (min-height: 500px)" ).matches) {
             var height = $(window).height() + "px";
-            $(".header-overlay").css('min-height', height);
+            $(".header-overlay").css('min-height', height);  
         }
     }
-
 
 
     /**********************************************************/
@@ -90,7 +92,7 @@
         /*********************************************************/
         /* FULLSCREEN HOME FUNCTION                              */
         /*********************************************************/
-        fullscreen_home();
+        /*fullscreen_home();
 
 
         /**********************************************************/
@@ -123,18 +125,19 @@
         /*   ...  */
         /**********************************************************/
         // var top = Math.max($(window).height() / 2 - $("#header-body")[0].offsetHeight / 2, 0);
+        /*
         var top = 0;
         $("#header-body").css('padding-top', top + "px").css('padding-bottom', (top - $('#header-navbar ').height()) + "px");
         $("#header-body").css('position', 'relative');
-
-
+*/
 
         /**********************************************************/
         /* CAROUSEL SLIDER                                        */
-        /**********************************************************/
+        /*********************************************************
         var owl = $("#slider");
 
-        /* TESTIMONIAL SYNC WITH CLIENTS */
+*/
+        /* TESTIMONIAL SYNC WITH CLIENTS 
         owl.owlCarousel({
             items : 4, //10 items above 1000px browser width
             itemsDesktop : [1190, 3], //5 items between 1000px and 901px
@@ -145,7 +148,7 @@
             pagination:true,
             responsiveRefreshRate : 100
         });
-
+*/
 
 
 
@@ -180,8 +183,8 @@
 
         /**********************************************************/
         /* Fancy Select                                           */
-        /**********************************************************/
-        $('#ticket').fancySelect();
+        /*********************************************************
+        $('#ticket').fancySelect();*/
 
 
 
@@ -220,23 +223,23 @@
         /**********************************************************/
         /* FULLSCREEN HOME FUNCTION                               */
         /**********************************************************/
-        fullscreen_home();
+        /*fullscreen_home();
 
 
 
         /**********************************************************/
         /* PARALLAX                                               */
-        /**********************************************************/
+        /*********************************************************
         $(window).stellar({
             horizontalScrolling: false
-        });
+        });*/
 
 
 
 
         /**********************************************************/
         /* CUSTOMIZABLE SCROLLBAR                                 */
-        /**********************************************************/
+        /*********************************************************
         $("html").niceScroll({
             mousescrollstep: 40,
             cursorcolor: "#00B3FE",
@@ -247,7 +250,7 @@
             horizrailenabled:false
         });
 
-
+*/
 
 
 
@@ -295,7 +298,7 @@
 
         /***********************************************************/
         /* TESTIMONIAL SYNC WITH CLIENTS                           */
-        /***********************************************************/
+        /**********************************************************
         $("#sync").owlCarousel({
             pagination: false,
             autoPlay : 3000,
@@ -307,7 +310,7 @@
             autoHeight : true,
             transitionStyle:"fade"
         });
-
+*/
 
 
     });

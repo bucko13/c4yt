@@ -12,6 +12,203 @@
   -webkit-justify-content: center;
   justify-content: center;
 }
+/*variables by darren */
+ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFF;
+  padding-top: 10px
+}
+
+#navbar-nav li {
+  font-size: 14px;
+}
+
+.tab-content p {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.cta-button {
+  padding: 50px 40px;
+}
+
+@media (min-width:992px) {
+  .cta-button {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .para1 {
+    padding: 20px 0;
+  }
+  .para2 {
+    padding: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .judges, .prizes {
+    margin-bottom: 40px;
+  }
+  .about-our-event-right  {
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+    
+  }
+}
+
+.speakers-body h4 {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  line-height: 37px;
+}
+
+.venue-image {
+  background-image: url('../images/Impact Hub Logo.jpg');
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+
+/* SPONSORS */
+.sponsor-tiers {
+  text-align: left;
+  color: #bbc0d4;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 20px 0 30px 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.sponsor-tiers:after {
+  content: "";
+  position: relative;
+  width: 50px;
+  color: #000;
+  left: 0px;
+
+  display: block;
+}
+
+.sponsor {
+  padding: 20px 0;
+  height: 120px
+}
+
+.plat, .plat:after {
+  color: #c1bbb1;
+}
+.plat:after{
+  outline: 1px solid #c1bbb1;
+}
+
+.silv, .silv:after {
+  color: grey;
+}
+.silv:after {
+  outline:1px solid grey;
+}
+
+.bron, .bron:after {
+  color: rosybrown;
+}
+.bron:after {
+  outline:1px solid rosybrown;
+}
+
+.comm, comm:after {
+  color: black;
+}
+.comm:after {
+  outline:1px solid #636363;
+}
+
+/* JUDGES */
+.judges p {
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.judge-img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+#jj {
+  background-image: url('../images/judges-img/jj-image.jpg');
+  background-size: cover;
+}
+
+#jk {
+  background-image: url('../images/judges-img/jk-image.jpg');
+  background-size: cover;
+}
+
+#mk {
+  background-image: url('../images/judges-img/mk-image.jpg');
+  background-size: cover;
+}
+
+.prizes p {
+  color: #fff;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* PRIZES */
+.prize-img {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#crypto {
+  background-image: url('../images/prizes/Crypto Logo Picture.jpg');
+  background-size: cover;
+}
+
+#ledger{
+  background-image: url('../images/prizes/Ledger Hardware Picture.jpg');
+  background-size: cover;
+}
+
+#purse {
+  background-image: url('../images/prizes/purse.jpg');
+  background-size: cover;
+}
+
+#tickets {
+  background-image: url('../images/prizes/Conference Picture.jpeg');
+  background-size: cover;
+}
+
+/* a darker gradient option: 
+rgba(0, 150, 110, 0.75) 10%, rgba(0, 80, 154, 0.75) 90%), 
+
+a lighter option
+rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%),
+
+a red to blue gradient
+rgba(238, 0, 143, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%),
+*/
+
 /*
  ********************************
  *
@@ -23,6 +220,10 @@ body {
   overflow-x: hidden !important;
 }
 /*-- Transition Style css in css3 ----*/
+a, p, h4, h5, li {
+  text-shadow: 1px 1px 5px #0000005e;
+}
+
 * {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -229,10 +430,19 @@ h3 {
  *
  */
 .header-background {
-  background: url('../images/bg-1.jpg') top center fixed;
+  background: 
+    linear-gradient(to left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%),
+    url('../images/bg-1-black-small.jpg') top center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;/*
+  background: -webkit-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
+  background: -moz-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
+  background: -ms-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
+  background: -o-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
+  background: linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);*/
+
 }
+
 .header,
 .header-body {
   overflow: hidden;
@@ -487,7 +697,7 @@ h3 {
   overflow: hidden;
 }
 .about-our-event-right  {
-  margin-top: 180px !important;
+  margin-top: 180px;
   margin-bottom: 20px !important;
   
 }
@@ -516,8 +726,13 @@ h3 {
 .about-background-image .background-left {
   overflow: hidden;
 }
+
+
+
 .about-background-image .background-right {
-  background-image: url('../images/scedule.jpg');
+  background-image: 
+    linear-gradient(to left, rgba(0, 150, 110, 0.75) 10%, rgba(0, 80, 154, 0.75) 90%), 
+    url('../images/scedule-small.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 0;
@@ -562,8 +777,13 @@ h3 {
  *
  *
  */
+
+
+
+
+ 
 .scedule-background {
-  background: url('../images/bg-3.jpg') top center fixed;
+  background: url('../images/bg-3-small.jpg') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -587,7 +807,7 @@ h3 {
   opacity: 1 !important;
 }
 .nav-cus a {
-  border-left-color: #8C8C8C;
+  border-left-color: #FFF;
   border-left-width: 4px;
   border-left-style: solid;
   margin-bottom: 20px;
@@ -634,7 +854,7 @@ h3 {
  *
  */
 .speakers {
-  background: #323232;
+  background: #1f1e25;
 }
 .speakers-body h2 {
   text-align: center;
@@ -654,7 +874,7 @@ h3 {
   margin-top: 30px;
 }
 .item .view {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 /*
  ********************************
@@ -738,7 +958,9 @@ h3 {
  *
  */
 .countdown-background {
-  background: url('../images/bg-4.jpg') top center fixed;
+  background: 
+  linear-gradient(to left, rgba(0, 218, 154, 0.7) 10%, rgba(0, 98, 208, 0.7) 90%),
+  url('../images/bg-4-small.jpg') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -952,7 +1174,7 @@ h3 {
  *
  */
 .twitter-background {
-  background: url('../images/bg-3.jpg') top center fixed;
+  background: url('') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
