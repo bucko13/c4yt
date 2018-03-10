@@ -8,6 +8,8 @@
  *
  *  Defult CSS
  */
+
+ /*
 .overlay-color {
   background: -webkit-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
   background: -moz-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
@@ -15,7 +17,7 @@
   background: -o-linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
   background: linear-gradient(left, rgba(0, 238, 174, 0.75) 10%, rgba(0, 118, 228, 0.75) 90%);
 }
-
+*/
 
 .btn-group .btn-fill {
   background: #00eeae !important;
@@ -62,11 +64,14 @@
 }
 
 .schedule-background-gradient {
-  background: -webkit-linear-gradient(left, rgba(0, 198, 134, 0.75) 10%, rgba(0, 78, 188, 0.75) 90%);
+  /*background: -webkit-linear-gradient(left, rgba(0, 198, 134, 0.9) 10%, rgba(0, 78, 188, 0.9) 90%);*/
+  background: -webkit-linear-gradient(left, rgba(113, 0, 198, 0.9) 10%, rgba(0, 78, 188, 0.9) 90%);
 }
 
 .background-sponsors {
-  background: -webkit-linear-gradient(left, rgba(0, 218, 154, 0.9) 10%, rgba(0, 98, 208, 0.9) 90%);
+  background: aliceblue;
+  /*background: -webkit-linear-gradient(left, rgba(0, 218, 154, 0.9) 10%, rgba(0, 98, 208, 0.9) 90%);
+  background: -webkit-linear-gradient(left, rgba(0, 78, 188, 0.9) 10%, rgba(113, 0, 198, 0.9) 90%);*/
 }
 /*
  ********************************

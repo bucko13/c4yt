@@ -8,7 +8,7 @@
     /**********************************************************/
     var navbarCus = function(){
 
-        if($(document).width() <= 768){
+        if($(document).width() <= 767){
             $('.myNavbarUl').removeClass('animated'),
             $('#myNavbar').addClass('collapse'),
             $('#myNavbar').addClass('navbar-collapse')
