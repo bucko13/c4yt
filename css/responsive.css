@@ -155,7 +155,7 @@
   .dropdown ul li {
     display: block;
     width: 100%;
-    background: #1f1e25;
+    background: #1f1e25a1;
     border-bottom: 1px solid #454549;
     padding: 8px 20px;
     transition: all 0.8s;
