@@ -241,8 +241,10 @@ aside ul li a:focus span {
   .dropdown ul li:hover,
   .dropdown .label:hover,
   .dropdown ul li:hover {
-    background: #00eeae;
+    background: #00eeaebf;
+    color: #000;
   }
+
   .dropdown .label:hover {
     border-color: #00eeae;
   }
