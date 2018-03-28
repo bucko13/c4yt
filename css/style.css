@@ -34,6 +34,7 @@ ul li {
   padding: 50px 40px;
 }
 
+
 @media (min-width:992px) {
   .cta-button {
     padding-left: 0;
@@ -170,6 +171,17 @@ ul li {
   background-image: url('../images/judges-img/jw-image.jpg');
   background-size: cover;
 }
+/* PRIZES */
+.prizes .subtext {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.prizes {
+  margin-bottom: 50px;
+}
 
 .prizes p {
   color: #fff;
@@ -177,7 +189,7 @@ ul li {
   padding: 0 15px;
 }
 
-/* PRIZES */
+
 .prize-img {
   border-radius: 100%;
   width: 100px;
@@ -203,6 +215,11 @@ ul li {
 
 #tickets {
   background-image: url('../images/prizes/Conference Picture.jpeg');
+  background-size: cover;
+}
+
+#coach {
+  background-image: url('../images/prizes/yv.png');
   background-size: cover;
 }
 
