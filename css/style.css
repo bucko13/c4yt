@@ -114,6 +114,13 @@ ul li {
   outline: 1px solid #c1bbb1;
 }
 
+.gold, .gold:after {
+  color: #d0b581;
+}
+.gold:after {
+  outline:1px solid #d0b581;
+}
+
 .silv, .silv:after {
   color: grey;
 }
