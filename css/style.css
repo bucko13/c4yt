@@ -230,6 +230,11 @@ ul li {
   background-size: cover;
 }
 
+#vpn {
+  background-image: url('../images/prizes/vpn.jpg');
+  background-size: cover;
+}
+
 /* a darker gradient option: 
 rgba(0, 150, 110, 0.75) 10%, rgba(0, 80, 154, 0.75) 90%), 
 
