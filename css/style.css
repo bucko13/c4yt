@@ -143,6 +143,9 @@ ul li {
 }
 
 /* JUDGES */
+.judges {
+  padding-bottom: 30px;
+}
 .judges p {
   color: #fff;
   text-align: center;
@@ -176,6 +179,11 @@ ul li {
 
 #jw {
   background-image: url('../images/judges-img/jw-image.jpg');
+  background-size: cover;
+}
+
+#cf {
+  background-image: url('../images/judges-img/cf-image.jpg');
   background-size: cover;
 }
 /* PRIZES */
